@@ -1,0 +1,160 @@
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1240px;
+    padding: 27px 0;
+}
+
+.navigation-bar__line {
+    width: 100%;
+    max-width: 1270px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.navigation-bar__logo {
+    font-family: Belleza;
+    font-size: 38px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.menu__link {
+    font-family: Merriweather;
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--color-black);
+    margin-left: 55px;
+}
+
+.menu__link:first-child {
+    margin-left: 0;
+}
+
+.buttons__item {
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.buttons__item:first-child {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .navigation-bar {
+        max-width: 1180px;
+    }
+
+    .navigation-bar__line {
+        max-width: 1210px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .navigation-bar {
+        max-width: 890px;
+    }
+
+    .navigation-bar__line {
+        max-width: 920px;
+    }
+    
+    .navigation-bar__logo {
+        font-size: 36px;
+        letter-spacing: 0.15em;
+    }
+    
+    .menu__link {
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    
+    .buttons__item {
+        margin-left: 24px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navigation-bar {
+        max-width: 600px;
+    }
+
+    .navigation-bar__line {
+        max-width: 630px;
+    }
+    
+    .navigation-bar__logo {
+        font-size: 26px;
+        letter-spacing: 0.15em;
+    }
+    
+    .menu__link {
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    
+    .buttons__item {
+        margin-left: 15px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .navigation-bar {
+        max-width: 550px;
+    }
+
+    .navigation-bar__line {
+        max-width: 580px;
+    }
+    
+    .navigation-bar__logo {
+        font-size: 22px;
+        letter-spacing: 0.15em;
+    }
+    
+    .menu__link {
+        font-size: 12px;
+        margin-left: 14px;
+    }
+    
+    .buttons__item {
+        margin-left: 12px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    .navigation-bar {
+        max-width: 300px;
+    }
+
+    .navigation-bar__line {
+        max-width: 330px;
+    }
+    
+    .navigation-bar__logo {
+        font-size: 35px;
+        letter-spacing: 0.15em;
+    }
+    
+    .menu__link {
+        display: none;
+    }
+    
+    .buttons__item {
+        margin-left: 18px;
+        font-size: 18px;
+    }
+}

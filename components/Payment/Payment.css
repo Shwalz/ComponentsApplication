@@ -1,0 +1,317 @@
+.payment__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.payment__blur {
+    background-color: var(--color-blur);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.payment__popup {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 15px 20px 20px 20px;
+    z-index: 5;
+}
+
+.payment__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+.payment__title {
+    font-family: Merriweather;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.payment__button-close {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.payment__button-close:hover {
+    cursor: pointer;
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+.button__img {
+    font-size: 30px;
+}
+
+.payment__nav {
+    font-family: Merriweather;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 30px 0;
+    align-items: flex-start;
+}
+
+.payment-nav__current {
+    color: rgba(137, 131, 131, 0.4);
+}
+
+.payment__payment-secure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px 0 30px 0;
+}
+
+.payment-secure__title {
+    font-family: Merriweather;
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+}
+
+.payment-secure__text {
+    font-family: Merriweather;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: rgba(137, 131, 131, 0.7);
+    margin-top: 15px;
+}
+
+.payment__credit-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.credit-card__button-radio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    padding: 13px 20px;
+    width: 100%;
+}
+
+.button-radio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.button-radio label {
+    font-family: Merriweather;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.credit-card__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.credit-card__forms-container {
+    background: rgba(219, 218, 218, 0.4);
+}
+
+.credit-card__forms {
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-numder, .card-name, .card-date, .card-security-code {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-numder input, .card-name input, .card-date input, .card-security-code input {
+    font-family: Merriweather;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: rgba(137, 131, 131, 0.7);
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.card-numder, .credit-card__button-radio,.card-name, .card-date, .card-security-code {
+    background-color: #ffffff;
+}
+
+.card-date-code {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.payment__forms {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.payment__forms > *:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.form__contact, .form__ship-to, .form__method {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    outline: none;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__title, .ship-to__title, .method__title {
+    font-family: Merriweather;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: rgba(137, 131, 131, 0.7);
+}
+
+.contact__text, .ship-to__text, .method__text {
+    font-family: Merriweather;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+}
+
+.contact__button, .ship-to__button {
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: rgba(137, 131, 131, 0.4);
+    border: none;
+    background: none;
+    font-size: 16px;
+}
+
+.method__price {
+    font-family: Merriweather;
+    font-size: 16px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    line-height: 20px;
+    color: var(--color-black);
+}
+
+.contact__button:hover, .ship-to__button:hover {
+    cursor: pointer;
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+.payment__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.button__retutn-to-shipping {
+    font-family: Merriweather;
+    font-size: 24px;
+    line-height: 30px;
+    border: none;
+    background: none;
+    color: rgba(137, 131, 131, 0.7);
+    text-align: left;
+    margin-right: 15px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.button__complete-order {
+    font-family: Merriweather;
+    font-weight: 500;
+    padding: 17px;
+    border: 2.4px solid rgba(0, 0, 0, 0.6);
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+    color: var(--color-black);
+    width: 60%;
+    background-color: #ffffff;
+    text-align: center;
+    max-height: 100px;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.button__retutn-to-shipping:hover {
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+.button__complete-order:hover {
+    color: #ffffff;
+    background: #000000;
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+    .card-date-code {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .text {
+        font-size: 80%;
+    }
+
+    .card-numder input, .card-name input, .card-date input, .card-security-code input {
+        font-size: 14px;
+    }
+
+    .text-button {
+        font-size: 20px;
+    }
+}

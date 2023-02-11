@@ -1,0 +1,123 @@
+
+* {
+    font-family: Merriweather;
+}
+
+.shipping__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.shipping__blur {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    background-color: var(--color-black);
+    opacity: 0.5;
+}
+.shipping__popup {
+    max-width: 700px;
+    width: 100%;
+    height: 700px;
+    background: var(--color-modal-window-white);
+    z-index: 5;
+    padding: 25px 35px 42px 35px;
+}
+
+.shipping__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shipping__title{
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: var(--color-black);
+}
+
+.shipping__button{
+    color: var(--color-black);
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.shipping__button-button {
+    font-size: 26px;
+    margin: 0 -2px 5.5px 0;
+}
+
+.shipping__snipets {
+    margin: 30px 0 25px 0;
+}
+
+.shipping__snipets span {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+.shipping-snipets__otherColor {
+    color: rgba(137, 131, 131, 0.7);
+}
+
+.shipping__inputs {
+    margin-bottom: 20px;
+    padding-left: 24px;
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+}
+
+
+.shipping__confirm {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.shipping__confirm-span {
+    margin-right: 40px;
+    max-width: 130px;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: rgba(137, 131, 131, 0.7);
+}
+
+.shipping__btn {
+    font-family: Merriweather;
+    max-width: 365px;
+    width: 100%;
+    max-height: 60px;
+    border: 1px solid var(--color-black);
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 17px 17px;
+    
+}
+.shipping__btn:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}

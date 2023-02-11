@@ -1,0 +1,247 @@
+* {
+    font-family: Merriweather;
+}
+
+.information__blur {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 12;
+    background-color: var(--color-blur);
+}
+
+.information__container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 12;
+}
+
+.information__popup {
+    max-width: 700px;
+    width: 100%;
+    max-height: 800px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 15px 20px 20px 20px;
+    z-index: 13;
+}
+
+.information__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.information__title {
+    font-family: Merriweather;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.information__button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.information__button:hover {
+    cursor: pointer;
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+.information__button-button {
+    font-size: 30px;
+}
+
+.information__snipets {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.information__snipets-A {
+    display: flex;
+}
+
+.snipets__color {
+    color: #000000;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+.snipets__otherColor {
+    color: rgba(137, 131, 131, 0.7);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+.information__questions-authority {
+    display: flex;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+
+.information__questions-authority p {
+    margin-right: 3px;
+    font-size: 16px;
+}
+
+.information__questions-authority span {
+    font-size: 16px;
+}
+
+.inputs__Block {
+    height: 450px;
+}
+
+.inputs {
+    width: 100%;
+    max-height: 50px;
+    height: 100vh;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    padding-left: 20px;
+
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: rgba(137, 131, 131, 0.7);
+    margin-bottom: 17.5px;
+}
+
+.inputs:focus {
+    border: 0.3px solid rgba(137, 131, 131, 0.7);
+}
+
+.inputsLittle {
+    margin-right: 17.5px;
+}
+
+.inputsLittleChild {
+    display: flex;
+    width: 100%;
+}
+
+.information__confirm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.information__confirm-span {
+    background: none;
+    border: none;
+    outline: none;
+    max-width: 182px;
+    width: 100%;
+    text-align: left;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: rgba(137, 131, 131, 0.7);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.information__btn {
+    max-width: 365px;
+    width: 100%;
+    max-height: 63px;
+    height: 100vh;
+    border: 2.4px solid rgba(0, 0, 0, 0.6);
+    background: none;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--color-black);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.information__confirm-span:hover {
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+.information__btn:hover {
+    color: #FFFFFF;
+    background: #000000;
+    transition: 0.3s ease-in-out;
+}
+
+@media (max-height: 800px) {
+    .information__snipets {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 430px) {
+    .information__popup {
+        max-height: 570px;
+        height: 100vh;
+    }
+    .information__snipets {
+        flex-direction: column;
+    }
+    .information__title {
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .information__confirm-span {
+        font-size: 18px;
+        max-width: 130px;
+    }
+    .information__btn {
+        font-size: 18px;
+        max-width: 300px;
+        max-height: 53px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .information__snipets {
+        margin: 10px 0;
+    }
+    .information__questions-authority {
+        padding: 0 0 10px 0;
+        font-weight: 0;
+    }
+    .inputs {
+        max-height: 40px;
+        height: 100vh;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 800px) {
+    .information__popup {
+        max-height: 790px;
+        height: 100%;
+    }
+}
+

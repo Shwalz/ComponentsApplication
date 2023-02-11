@@ -1,0 +1,232 @@
+* {
+    font-family: Merriweather;
+}
+
+.modal-window-shipping__container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+}
+
+.modal-window-shipping__blur {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 15;
+    background-color: var(--color-blur);
+}
+
+.modal-window-shipping__content {
+    max-width: 700px;
+    width: 100%;
+    padding: 15px 20px 20px 20px;
+    z-index: 16;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.shipping__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.shipping__button-cross {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.shipping__button-cross:hover {
+    cursor: pointer;
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+.button-shipping__icon {
+    font-size: 30px;
+}
+
+.shipping__title {
+    font-size: 32px;;
+    line-height: 40px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: var(--color-black);
+}
+
+.shipping__nav {
+    font-family: Merriweather;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 30px 0 40px 0
+}
+
+.shipping__forms {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.form__contact, .form__ship-to {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    outline: none;
+    padding: 25px;
+}
+
+.form__contact {
+    margin-bottom: 30px;
+}
+
+.form__ship-to {
+    margin-bottom: 50px;
+}
+
+.form__international-shipping {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    outline: none;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.international-shipping__title, .subtotal__title, .price-shipping__title, .shipping__taxes {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: rgba(137, 131, 131, 0.7);
+}
+
+.international-shipping__price, .subtotal__price, .price-shipping__price, .total__price, .total__title, .shipping__other-windows a, span {
+    color: var(--color-black);
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.shipping__prices {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.prices__line {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.prices__subtotal, .prices__shipping, .shipping__total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prices__subtotal {
+    margin: 30px 0 20px 0;
+}
+
+.prices__shipping {
+    margin-bottom: 30px;
+}
+
+.shipping__total {
+    margin: 40px 0 10px 0;
+}
+
+.shipping__taxes {
+    margin-bottom: 40px;
+}
+
+.shipping__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button__retutn-to-information {
+    font-size: 24px;
+    line-height: 30px;
+    border: none;
+    background: none;
+    color: rgba(137, 131, 131, 0.7);
+    text-align: left;
+    margin-right: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.button__to-payment {
+    font-weight: 500;
+    padding: 17px;
+    border: 2.4px solid rgba(0, 0, 0, 0.6);
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+    color: var(--color-black);
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    background: none;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+.button__retutn-to-information:hover {
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+.button__to-payment:hover {
+    color: #ffffff;
+    background: #000000;
+    transition: 0.3s ease-in-out;
+} 
+
+@media (max-width: 600px) {
+    .button__to-payment {
+        width: 70%;
+        font-size: 18px;
+    }
+    .button__retutn-to-information {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 500px) {
+    .button__to-payment {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .international-shipping__price, .international-shipping__title, .subtotal__price, .price-shipping__price, .total__price {
+        font-size: 14px;
+    }
+    ::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+}
